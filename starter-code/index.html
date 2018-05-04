@@ -1,28 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <title>npm</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 
+      <link rel="stylesheet" type="text/css" href="styles.css">
+    -->
+    <title>npm</title>
+  </head>
+   
+  <body>  
     <nav>
-        <div class="top-left">
-          <a class = "heart" href="#">♥︎</a>
-          <span class="acronym">Neophobe Plebeian Mumpsimus</span>
+      <div class="top-left">
+        <a class = "heart" href="#">♥︎</a>
+        <span class="acronym">Neophobe Plebeian Mumpsimus</span>
+      </div>
+      <ul class="top-links">
+        <li><a href="#">npm Enterprise</a></li>
+        <li><a href="#">features</a></li>
+        <li><a href="#">pricing</a></li>
+        <li><a href="#">documentation</a></li>
+        <li><a href="#">support</a></li>
+      </ul>
+    </nav>      
+    <header>
+      <div id="npm-search">
+        <div id="npm-logo"><img src="./images/npm-logo.png" alt="npm"></div>
+        <form action="search">
+          <input type="text" name="search-string" id="search-string">
+          <button class="button-search"></button>
+        </form>
+        <div id="login">
+          <a href="#">sign up</a>
+          <span>or</span>
+          <a href="#">log in</a>
+          <img src="./images/bear-logo.png" alt="bear">
         </div>
-        <ul class="top-links">
-          <li><a href="#">npm Enterprise</a></li>
-          <li><a href="#">features</a></li>
-          <li><a href="#">pricing</a></li>
-          <li><a href="#">documentation</a></li>
-          <li><a href="#">support</a></li>
-        </ul>
-      </nav>
-
+      </div>     
+      <div>
+        <h1>Build Amazing things</h1>
+        <span>npm is the package manager for JavaScript and the world’s largest software registry. Discover packages of reusable code — and assemble them in powerful new ways.</span>
+        <button class="nom-button orange">Sign up for npm</button>
+      </div>
+    </header>
       
-  test changes<!-- Your code goes here -->
-</body>
+    <section  class="section1">
+      <div id="section1-left">
+        <img src="./images/collaboration.svg" alt="">
+      </div>
+      <div id="section1-right">
+        <h2>npm Orgs is powerful collaboration - for free</h2>
+        <ul>
+          <li>Encourage code discovery and re-use within teams</li>
+          <li>Publish and control access to your own namespace</li>
+          <li>Manage public and private code with the same workflow</li>
+        </ul>
+          <button class="nom-button red">Sign up for Orgs</button>
+          <p>or, <span>Learn more about Orgs</span></p>
+      </div>
+      </div>
+    </section> 
+    <section  class="section2">
+      <div id="section2-left"></div>
+      <div id="section2-right">
+        <h3>What is npm?</h3>
+        <p>Use npm to install, share, and distribute code; manage dependencies in your projects; and share & receive feedback with others.</p>
+        <button class="nom-button marine">Install npm</button>
+      </div>
+    </section> 
+    <section  class="section 3">
+        <div id="section3-up">
+          <h2>What can you make with 650,000 building blocks?</h2>
+          <p>The npm registry hosts the world’s largest collection of free, reusable code. - The lergest software registry in the world</p>
+        </div>
+        <div id="section3-down">
+          <div class="section3-frame">
+            <img src="./images/binoculars.svg" alt="">
+            <h3>Find</h3>
+            Libraries like <a href="#">jQuery</a> ,  <a href="#">Bootstrap</a> , <a href="#">React</a> , and <a href="#">Angular</a> , and components from frameworks such as <a href="#">aEmber.</a>
+            
+          </div>
+          <div>
+            <img src="./images/mountain-flag.svg" alt="">
+            <h3>Discover</h3>
+            <p>Packages for mobile, IoT, front end, back end, robotics… everything you need to start building amazing things.</p>
+          </div>
+          <div>
+            <img src="./images/backpack.svg" alt="">
+            <h3>Build</h3>
+            <p>Assemble packages like building blocks to quickly develop awesome new projects.</p>
+          </div>
+        </div>
+    </section> 
+    <section class="section"></section>
+  </body>
 </html>
