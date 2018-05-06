@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>npm</title>
   </head>
-   
-  <body>  
+        
+  <body>
+    <!--  MENU BAR -->  
     <nav>
       <div class="top-left">
         <a class = "heart" href="#">♥︎</a>
@@ -22,75 +24,90 @@
         <li><a href="#">support</a></li>
       </ul>
     </nav>      
+
+    <!-- HEADER COLLABORATION-->
     <header>
-      <div id="npm-search">
-        <div id="npm-logo"><img src="./images/npm-logo.png" alt="npm"></div>
-        <form action="search">
-          <input type="text" name="search-string" id="search-string">
-          <button class="button-search"></button>
-        </form>
-        <div id="login">
+      <div class="header-bar">
+        <div class="header-bar-logo">
+          <img id="npm_logo" src="./images/npm-logo.png" alt="npm">
+        </div>
+        <div class="header-bar-find">
+          <input type="text" name="find-package" id="find_package" value="find package">
+          <button id="lupa">&#x1F50D</button>
+        </div>
+        <div class="header-bar-login">
           <a href="#">sign up</a>
           <span>or</span>
-          <a href="#">log in</a>
-          <img src="./images/bear-logo.png" alt="bear">
+          <a href="#">log in</a>    
+          <img id="npm_bear" src="./images/bear-logo.png" alt="bear">
         </div>
-      </div>     
-      <div>
-        <h1>Build Amazing things</h1>
-        <span>npm is the package manager for JavaScript and the world’s largest software registry. Discover packages of reusable code — and assemble them in powerful new ways.</span>
-        <button class="nom-button orange">Sign up for npm</button>
+      </div> 
+      <div class="header-panel">
+        <div class="header-panel-content">
+          <h1>Build Amazing things</h1>
+          <span>npm is the package manager for JavaScript and the world’s largest software registry. Discover packages of reusable code — and assemble them in powerful new ways.</span>
+          <div class="header-panel-button">
+            <button class="npm-button orange">Sign up for npm</button>
+          </div>
+        </div>
       </div>
     </header>
-      
+
+<!--  SECTION 1 SHARE -->      
     <section  class="section1">
-      <div id="section1-left">
-        <img src="./images/collaboration.svg" alt="">
+      <div class="section1-left">
+        <img id="img_section1" src="./images/collaboration.svg" alt="">
       </div>
-      <div id="section1-right">
+      <div class="section1-right">
         <h2>npm Orgs is powerful collaboration - for free</h2>
         <ul>
           <li>Encourage code discovery and re-use within teams</li>
           <li>Publish and control access to your own namespace</li>
           <li>Manage public and private code with the same workflow</li>
         </ul>
-          <button class="nom-button red">Sign up for Orgs</button>
+        <div class="header-panel-button">
+          <button class="npm-button red">Sign up for Orgs</button>
+        </div>
           <p>or, <span>Learn more about Orgs</span></p>
       </div>
-      </div>
     </section> 
+
+<!--  SECTION 2 INSTALL -->
     <section  class="section2">
-      <div id="section2-left"></div>
-      <div id="section2-right">
-        <h3>What is npm?</h3>
-        <p>Use npm to install, share, and distribute code; manage dependencies in your projects; and share & receive feedback with others.</p>
-        <button class="nom-button marine">Install npm</button>
+      <div class="section2-left">
+          <h3>What is npm?</h3>
+          <p>Use npm to install, share, and distribute code; manage dependencies in your projects; and share & receive feedback with others.</p>
+          <div class="header-panel-button">
+            <button class="npm-button marine">Install npm</button>
+          </div>
+      </div>
+      <div class="section2-right">
+
       </div>
     </section> 
-    <section  class="section 3">
-        <div id="section3-up">
-          <h2>What can you make with 650,000 building blocks?</h2>
+<!--  SECTION 3 CAN MAKE -->
+    <section  class="section3">
+        <div class="section3-up">
+          <h2>What can you make with 475,000 building blocks?</h2>
           <p>The npm registry hosts the world’s largest collection of free, reusable code. - The lergest software registry in the world</p>
         </div>
-        <div id="section3-down">
-          <div class="section3-frame">
-            <img src="./images/binoculars.svg" alt="">
-            <h3>Find</h3>
-            Libraries like <a href="#">jQuery</a> ,  <a href="#">Bootstrap</a> , <a href="#">React</a> , and <a href="#">Angular</a> , and components from frameworks such as <a href="#">aEmber.</a>
-            
+        <div class="section3-down">
+          <div class="section3-box">
+            <img class="section3-img" src="./images/binoculars.svg" alt="">
+            <h3 class="S3">Find</h3>
+            <p>Libraries like <a href="#">jQuery</a>, <a href="#">Bootstrap</a>, <a href="#">React</a>, and <a href="#">Angular</a>, and components from frameworks such as <a href="#">aEmber.</a></p>
           </div>
-          <div>
-            <img src="./images/mountain-flag.svg" alt="">
-            <h3>Discover</h3>
+          <div class="section3-box">
+            <img  class="section3-img" src="./images/mountain-flag.svg" alt="">
+            <h3 class="S3">Discover</h3>
             <p>Packages for mobile, IoT, front end, back end, robotics… everything you need to start building amazing things.</p>
           </div>
-          <div>
-            <img src="./images/backpack.svg" alt="">
-            <h3>Build</h3>
+          <div class="section3-box">
+            <img  class="section3-img" src="./images/backpack.svg" alt="">
+            <h3 class="S3">Build</h3>
             <p>Assemble packages like building blocks to quickly develop awesome new projects.</p>
           </div>
         </div>
     </section> 
-    <section class="section"></section>
   </body>
 </html>
